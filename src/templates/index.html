@@ -1,117 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indonesia Travel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="header-top">
-      <div class="container">
-        <div class="logo">
-          <a href="#">
-            <img src="/api/placeholder/200/50" alt="Indonesia Travel">
-          </a>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Search">
-          <button>Search</button>
-        </div>
-        <div class="language-select">
-          <select>
-            <option value="en">English</option>
-            <option value="id">Bahasa Indonesia</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <nav class="main-nav">
-      <div class="container">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Things to Do</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Discover the Beauty of Indonesia</h1>
-        <p>Explore the diverse landscapes, rich culture, and vibrant cities of Indonesia.</p>
-        <a href="#" class="cta">Explore Now</a>
-      </div>
-    </section>
-
-    <section class="featured-destinations">
-      <div class="container">
-        <h2>Featured Destinations</h2>
-        <div class="destination-grid">
-          <div class="destination-card">
-            <img src="/api/placeholder/400/320" alt="Bali">
-            <h3>Bali</h3>
-            <p>Explore the island's stunning beaches, lush rice terraces, and ancient temples.</p>
-            <a href="#" class="more-info">Learn More</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indonesia Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="shadow-md">
+      <div class="bg-blue-600 text-white py-2">
+        <div class="container mx-auto flex justify-between items-center px-4">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="https://placehold.co/200x50"
+                alt="Indonesia Travel"
+                class="max-h-12"
+              />
+            </a>
           </div>
-          <div class="destination-card">
-            <img src="/api/placeholder/400/320" alt="Komodo National Park">
-            <h3>Komodo National Park</h3>
-            <p>Witness the mighty Komodo dragons in their natural habitat.</p>
-            <a href="#" class="more-info">Learn More</a>
+          <div class="search flex gap-2">
+            <input
+              type="text"
+              placeholder="Search"
+              class="px-3 py-2 rounded-md border-none w-72"
+            />
+            <button class="bg-blue-800 text-white px-4 py-2 rounded-md">
+              Search
+            </button>
           </div>
-          <div class="destination-card">
-            <img src="/api/placeholder/400/320" alt="Lombok">
-            <h3>Lombok</h3>
-            <p>Relax on the beautiful beaches and hike the majestic Mount Rinjani.</p>
-            <a href="#" class="more-info">Learn More</a>
+          <div class="language-select">
+            <select
+              class="px-3 py-2 rounded-md bg-blue-800 text-white border-none"
+            >
+              <option value="en">English</option>
+              <option value="id">Bahasa Indonesia</option>
+            </select>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <div class="about">
-          <h3>About Indonesia Travel</h3>
-          <p>Indonesia Travel is a comprehensive guide to the diverse destinations, activities, and experiences that Indonesia has to offer.</p>
-        </div>
-        <div class="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Things to Do</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+      <nav class="py-2">
+        <div class="container mx-auto">
+          <ul class="flex justify-center space-x-6">
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Explore</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Things to Do</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="contact">
-          <h3>Contact Us</h3>
-          <p>Email: info@indonesia.travel</p>
-          <p>Phone: +62 21 2358 9999</p>
-          <div class="social-links">
-            <a href="#" class="social-icon"><img src="/api/placeholder/32/32" alt="Facebook"></a>
-            <a href="#" class="social-icon"><img src="/api/placeholder/32/32" alt="Twitter"></a>
-            <a href="#" class="social-icon"><img src="/api/placeholder/32/32" alt="Instagram"></a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section
+        class="bg-cover bg-center text-center text-white py-24"
+        style="background-image: url('https://placehold.co/1600x900')"
+      >
+        <div class="container mx-auto">
+          <h1 class="text-4xl font-bold mb-4">
+            Discover the Beauty of Indonesia
+          </h1>
+          <p class="text-lg mb-6">
+            Explore the diverse landscapes, rich culture, and vibrant cities of
+            Indonesia.
+          </p>
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold text-lg"
+            >Explore Now</a
+          >
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="py-20">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            Featured Destinations
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Destination Card -->
+            <div class="destination-card text-center">
+              <img
+                src="https://placehold.co/400x320"
+                alt="Bali"
+                class="w-full h-48 object-cover rounded-md"
+              />
+              <h3 class="text-xl font-bold mt-4">Bali</h3>
+              <p class="mt-2">
+                Explore the island's stunning beaches, lush rice terraces, and
+                ancient temples.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md mt-4"
+                >Learn More</a
+              >
+            </div>
+            <div class="destination-card text-center">
+              <img
+                src="https://placehold.co/400x320"
+                alt="Komodo National Park"
+                class="w-full h-48 object-cover rounded-md"
+              />
+              <h3 class="text-xl font-bold mt-4">Komodo National Park</h3>
+              <p class="mt-2">
+                Witness the mighty Komodo dragons in their natural habitat.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md mt-4"
+                >Learn More</a
+              >
+            </div>
+            <div class="destination-card text-center">
+              <img
+                src="https://placehold.co/400x320"
+                alt="Lombok"
+                class="w-full h-48 object-cover rounded-md"
+              />
+              <h3 class="text-xl font-bold mt-4">Lombok</h3>
+              <p class="mt-2">
+                Relax on the beautiful beaches and hike the majestic Mount
+                Rinjani.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md mt-4"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-10">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- About -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">About Indonesia Travel</h3>
+            <p>
+              Indonesia Travel is a comprehensive guide to the diverse
+              destinations, activities, and experiences that Indonesia has to
+              offer.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Home</a></li>
+              <li><a href="#" class="hover:underline">Destinations</a></li>
+              <li><a href="#" class="hover:underline">Explore</a></li>
+              <li><a href="#" class="hover:underline">Things to Do</a></li>
+              <li><a href="#" class="hover:underline">Events</a></li>
+              <li><a href="#" class="hover:underline">About</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+            <p>Email: info@indonesia.travel</p>
+            <p>Phone: +62 21 2358 9999</p>
+            <div class="flex gap-4 mt-4">
+              <a href="#"
+                ><img src="https://placehold.co/32x32" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="https://placehold.co/32x32" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="https://placehold.co/32x32" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10 text-sm">
+          <p>&copy; 2023 Indonesia Travel. All rights reserved.</p>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 Indonesia Travel. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
