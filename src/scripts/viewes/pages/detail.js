@@ -3,34 +3,34 @@ const cityData = {
   Malang: {
     name: "Malang",
     description: "Malang adalah kota terbesar kedua di Jawa Timur yang dikenal dengan udaranya yang sejuk dan pemandangan alamnya yang indah. Kota ini memiliki warisan sejarah yang kaya dan merupakan pusat pendidikan yang penting.",
-    imageUrl: "https://via.placeholder.com/1200x400",
+    imageUrl: "https://placehold.co/1200x400",
     touristSpots: [
       {
         name: "Jatim Park",
         description: "Taman rekreasi modern dengan berbagai wahana dan atraksi.",
-        imageUrl: "https://via.placeholder.com/300x200",
+        imageUrl: "https://placehold.co/300x200",
       },
       {
         name: "Gunung Bromo",
         description: "Gunung berapi aktif dengan pemandangan matahari terbit yang menakjubkan.",
-        imageUrl: "https://via.placeholder.com/300x200",
+        imageUrl: "https://placehold.co/300x200",
       },
       {
         name: "Kampung Warna-Warni",
         description: "Perkampungan unik dengan rumah-rumah berwarna-warni yang instagramable.",
-        imageUrl: "https://via.placeholder.com/300x200",
+        imageUrl: "https://placehold.co/300x200",
       },
     ],
     culinary: [
       {
         name: "Bakso Malang",
         description: "Bakso dengan berbagai variasi isi dan tekstur.",
-        imageUrl: "https://via.placeholder.com/300x200",
+        imageUrl: "https://placehold.co/300x200",
       },
       {
         name: "Apel Malang",
         description: "Buah apel segar khas Malang.",
-        imageUrl: "https://via.placeholder.com/300x200",
+        imageUrl: "https://placehold.co/300x200",
       },
     ],
     events: [
@@ -46,11 +46,246 @@ const cityData = {
       },
     ],
   },
+  Bali: {
+    name: "Bali",
+    description: "Pulau legendaris yang terkenal dengan keindahan alam, budaya yang kaya, dan pantai-pantai eksotis. Bali menawarkan pengalaman spiritual, seni, dan petualangan yang tak terlupakan.",
+    imageUrl: "https://placehold.co/1200x400",
+    touristSpots: [
+      {
+        name: "Tanah Lot",
+        description: "Pura spektakuler di atas batu karang dengan pemandangan matahari terbenam yang memukau.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Ubud Monkey Forest",
+        description: "Hutan suci dengan ratusan kera yang hidup bebas di antara kuil-kuil tua.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Tegalalang Rice Terraces",
+        description: "Terasering sawah yang indah, menampilkan keajaiban pertanian tradisional Bali.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    culinary: [
+      {
+        name: "Babi Guling",
+        description: "Babi panggang khas Bali dengan bumbu tradisional yang kaya rasa.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Nasi Campur Bali",
+        description: "Hidangan nasi dengan berbagai lauk pauk khas Bali.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    events: [
+      {
+        name: "Nyepi",
+        date: "March 2025",
+        description: "Hari raya Tahun Baru Saka dengan tradisi keheningan dan perenungan.",
+      },
+      {
+        name: "Bali Arts Festival",
+        date: "June - July 2025",
+        description: "Festival seni terbesar di Bali yang menampilkan kebudayaan dan seni tradisional.",
+      },
+    ],
+  },
+  Jakarta: {
+    name: "Jakarta",
+    description: "Ibu kota Indonesia yang dinamis, pusat bisnis, dan budaya yang menyatukan keberagaman. Jakarta merupakan kota metropolitan dengan sejarah, kuliner, dan kehidupan urban yang mengesankan.",
+    imageUrl: "https://placehold.co/1200x400",
+    touristSpots: [
+      {
+        name: "Monas",
+        description: "Monumen Nasional yang menjadi ikon kota, menyimpan sejarah perjuangan bangsa.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Kota Tua",
+        description: "Kawasan bersejarah dengan arsitektur kolonial yang memukau.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Ancol Dreamland",
+        description: "Taman hiburan terbesar di Indonesia dengan berbagai wahana seru.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    culinary: [
+      {
+        name: "Soto Betawi",
+        description: "Sup khas Jakarta dengan kuah kental dan rempah-rempah.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Kerak Telor",
+        description: "Makanan tradisional Betawi berbahan dasar telur dan beras.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    events: [
+      {
+        name: "Jakarta Fair",
+        date: "June - July 2025",
+        description: "Pameran tahunan terbesar di Indonesia dengan berbagai hiburan dan pameran.",
+      },
+      {
+        name: "Jakarta International Film Festival",
+        date: "November 2025",
+        description: "Festival film internasional yang menampilkan karya sineas dunia.",
+      },
+    ],
+  },
+  Lombok: {
+    name: "Lombok",
+    description: "Pulau indah di sebelah timur Bali yang menawarkan keindahan alam yang masih alami, pantai-pantai menakjubkan, dan budaya Sasak yang khas. Tempat ideal untuk petualangan dan relaksasi.",
+    imageUrl: "https://placehold.co/1200x400",
+    touristSpots: [
+      {
+        name: "Mount Rinjani",
+        description: "Gunung berapi aktif tertinggi kedua di Indonesia dengan pemandangan spektakuler.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Gili Islands",
+        description: "Tiga pulau kecil dengan pantai pasir putih dan terumbu karang menakjubkan.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Kuta Lombok",
+        description: "Pantai indah dengan pasir putih dan ombak yang cocok untuk berselancar.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    culinary: [
+      {
+        name: "Ayam Taliwang",
+        description: "Hidangan ayam pedas khas Lombok yang terkenal.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Plecing Kangkung",
+        description: "Sayur kangkung dengan sambal tomat khas Lombok.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    events: [
+      {
+        name: "Bau Nyale Festival",
+        date: "February 2025",
+        description: "Festival tradisional menangkap ikan nyale dengan ritual adat.",
+      },
+      {
+        name: "Lombok Surf Festival",
+        date: "September 2025",
+        description: "Festival olahraga air yang menghadirkan peselancar dari seluruh dunia.",
+      },
+    ],
+  },
+  Bandung: {
+    name: "Bandung",
+    description: "Kota kreatif di dataran tinggi Jawa Barat yang dikenal dengan mode, kuliner, dan suasana alamnya yang sejuk. Bandung adalah pusat mode, pendidikan, dan inovasi.",
+    imageUrl: "https://placehold.co/1200x400",
+    touristSpots: [
+      {
+        name: "Tangkuban Perahu",
+        description: "Gunung berapi aktif dengan kawah yang dapat dikunjungi.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Floating Market",
+        description: "Pasar terapung dengan konsep unik dan berbagai kuliner.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Paris Van Java",
+        description: "Pusat perbelanjaan modern dengan arsitektur yang menarik.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    culinary: [
+      {
+        name: "Batagor",
+        description: "Bakso tahu goreng dengan saus kacang khas Bandung.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Brownies Bandung",
+        description: "Kue cokelat lembut yang terkenal di seluruh Indonesia.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    events: [
+      {
+        name: "Bandung Fashion Week",
+        date: "October 2025",
+        description: "Pekan mode bergengsi yang menampilkan desainer lokal dan internasional.",
+      },
+      {
+        name: "Bandung International Music Festival",
+        date: "May 2025",
+        description: "Festival musik yang menghadirkan musisi dari berbagai genre.",
+      },
+    ],
+  },
+  Yogyakarta: {
+    name: "Yogyakarta",
+    description: "Pusat budaya Jawa yang kaya akan sejarah, seni, dan tradisi. Yogyakarta adalah rumah bagi warisan budaya dunia seperti Borobudur dan Prambanan, serta pusat pendidikan dan kreativitas.",
+    imageUrl: "https://placehold.co/1200x400",
+    touristSpots: [
+      {
+        name: "Borobudur Temple",
+        description: "Candi Buddha terbesar di dunia, situs warisan UNESCO.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Prambanan Temple",
+        description: "Kompleks candi Hindu terbesar di Indonesia.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Malioboro Street",
+        description: "Jalan perbelanjaan legendaris dengan suasana khas Yogyakarta.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    culinary: [
+      {
+        name: "Gudeg",
+        description: "Hidangan nangka muda yang dimasak dengan bumbu tradisional.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+      {
+        name: "Bakpia",
+        description: "Kue oleh-oleh terkenal yang berisi pasta kacang hijau.",
+        imageUrl: "https://placehold.co/300x200",
+      },
+    ],
+    events: [
+      {
+        name: "Yogyakarta Arts Festival",
+        date: "June - July 2025",
+        description: "Festival seni terbesar yang menampilkan kebudayaan Jawa.",
+      },
+      {
+        name: "Sekaten Festival",
+        date: "Maulid Nabi 2025",
+        description: "Festival budaya Islam yang meriah dengan pasar tradisional.",
+      },
+    ],
+  }
 };
 
 // Function to render city details
 function renderCityDetails(cityName) {
-  const city = cityData[cityName] || cityData.Malang;
+  const city = cityData[cityName];
+
+  if (!city) {
+    alert('Kota tidak ditemukan');
+    return;
+  }
 
   // Clear existing content
   document.body.innerHTML = "";
@@ -83,7 +318,7 @@ function renderCityDetails(cityName) {
                 </h2>
             </div>
             <div class="p-6">
-                <p class="text-gray-600">Malang adalah kota sejuk di Jawa Timur yang terkenal dengan wisata alam, seperti Gunung Bromo dan Coban Rondo, serta kuliner khasnya, seperti bakso Malang. Kota ini juga kaya akan sejarah dan budaya, menjadikannya destinasi yang memikat.</p>
+                <p class="text-gray-600">${city.description}</p>
             </div>
         </div>
 
@@ -100,27 +335,15 @@ function renderCityDetails(cityName) {
             </div>
             <div class="p-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    ${city.touristSpots.map(spot => `
                     <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Jatim Park" class="w-full h-48 object-cover">
+                        <img src="${spot.imageUrl}" alt="${spot.name}" class="w-full h-48 object-cover">
                         <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Jatim Park</h3>
-                            <p class="text-gray-600">Taman rekreasi modern dengan berbagai wahana dan atraksi.</p>
+                            <h3 class="font-bold text-lg mb-2">${spot.name}</h3>
+                            <p class="text-gray-600">${spot.description}</p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Gunung Bromo" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Gunung Bromo</h3>
-                            <p class="text-gray-600">Gunung berapi aktif dengan pemandangan matahari terbit yang menakjubkan.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Kampung Warna-Warni" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Kampung Warna-Warni</h3>
-                            <p class="text-gray-600">Perkampungan unik dengan rumah-rumah berwarna-warni yang instagramable.</p>
-                        </div>
-                    </div>
+                    `).join('')}
                 </div>
             </div>
         </div>
@@ -138,20 +361,15 @@ function renderCityDetails(cityName) {
             </div>
             <div class="p-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    ${city.culinary.map(food => `
                     <div class="flex gap-4 items-center">
-                        <img src="https://via.placeholder.com/300x200" alt="Bakso Malang" class="w-32 h-32 object-cover rounded-lg">
+                        <img src="${food.imageUrl}" alt="${food.name}" class="w-32 h-32 object-cover rounded-lg">
                         <div>
-                            <h3 class="font-bold text-lg mb-2">Bakso Malang</h3>
-                            <p class="text-gray-600">Bakso dengan berbagai variasi isi dan tekstur.</p>
+                            <h3 class="font-bold text-lg mb-2">${food.name}</h3>
+                            <p class="text-gray-600">${food.description}</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <img src="https://via.placeholder.com/300x200" alt="Apel Malang" class="w-32 h-32 object-cover rounded-lg">
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">Apel Malang</h3>
-                            <p class="text-gray-600">Buah apel segar khas Malang.</p>
-                        </div>
-                    </div>
+                    `).join('')}
                 </div>
             </div>
         </div>
@@ -170,18 +388,16 @@ function renderCityDetails(cityName) {
                 </h2>
             </div>
             <div class="p-6 space-y-4">
+                ${city.events.map(event => `
                 <div class="border-b pb-4 last:border-0">
-                    <h3 class="font-bold text-lg">Malang Night Paradise</h3>
-                    <p class="text-blue-600 font-medium">Every Weekend</p>
-                    <p class="text-gray-600">Festival cahaya dan hiburan malam hari.</p>
+                    <h3 class="font-bold text-lg">${event.name}</h3>
+                    <p class="text-blue-600 font-medium">${event.date}</p>
+                    <p class="text-gray-600">${event.description}</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg">Malang Tempo Doeloe</h3>
-                    <p class="text-blue-600 font-medium">August 2024</p>
-                    <p class="text-gray-600">Festival budaya yang menampilkan sejarah dan tradisi Malang.</p>
-                </div>
+                `).join('')}
             </div>
         </div>
+      </div>
     </div>
   `;
 
@@ -195,11 +411,15 @@ function renderCityDetails(cityName) {
   });
 }
 
-// Event listener for anchor clicks
-document.querySelectorAll("a[href='#/detail']").forEach((anchor) => {
-  anchor.addEventListener("click", (e) => {
-    e.preventDefault();
-    const cityName = e.target.textContent.trim();
-    renderCityDetails(cityName);
+// Tambahkan event listener untuk seluruh halaman
+document.addEventListener('DOMContentLoaded', () => {
+  // Event listener untuk link "Learn More" di halaman home
+  document.querySelectorAll('a[href="#/detail"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Ambil nama kota dari elemen sebelumnya (h3)
+      const cityName = anchor.closest('.destination-card').querySelector('h3').textContent.trim();
+      renderCityDetails(cityName);
+    });
   });
 });
