@@ -280,7 +280,12 @@ const cityData = {
 
 // Function to render city details
 function renderCityDetails(cityName) {
-  const city = cityData[cityName] || cityData.Malang;
+  const city = cityData[cityName];
+
+  if (!city) {
+    alert('Kota tidak ditemukan');
+    return;
+  }
 
   // Clear existing content
   document.body.innerHTML = "";
@@ -313,11 +318,11 @@ function renderCityDetails(cityName) {
                 </h2>
             </div>
             <div class="p-6">
-                <p class="text-gray-600">Malang adalah kota sejuk di Jawa Timur yang terkenal dengan wisata alam, seperti Gunung Bromo dan Coban Rondo, serta kuliner khasnya, seperti bakso Malang. Kota ini juga kaya akan sejarah dan budaya, menjadikannya destinasi yang memikat.</p>
+                <p class="text-gray-600">${city.description}</p>
             </div>
         </div>
 
-        <!-- Tourist Spots Section -->
+        <!-- Destination Section -->
         <div class="bg-white rounded-lg shadow-md mb-8">
             <div class="p-6 border-b">
                 <h2 class="text-xl font-bold flex items-center gap-2">
@@ -330,27 +335,15 @@ function renderCityDetails(cityName) {
             </div>
             <div class="p-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    ${city.touristSpots.map(spot => `
                     <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Jatim Park" class="w-full h-48 object-cover">
+                        <img src="${spot.imageUrl}" alt="${spot.name}" class="w-full h-48 object-cover">
                         <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Jatim Park</h3>
-                            <p class="text-gray-600">Taman rekreasi modern dengan berbagai wahana dan atraksi.</p>
+                            <h3 class="font-bold text-lg mb-2">${spot.name}</h3>
+                            <p class="text-gray-600">${spot.description}</p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Gunung Bromo" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Gunung Bromo</h3>
-                            <p class="text-gray-600">Gunung berapi aktif dengan pemandangan matahari terbit yang menakjubkan.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg overflow-hidden shadow">
-                        <img src="https://via.placeholder.com/300x200" alt="Kampung Warna-Warni" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-2">Kampung Warna-Warni</h3>
-                            <p class="text-gray-600">Perkampungan unik dengan rumah-rumah berwarna-warni yang instagramable.</p>
-                        </div>
-                    </div>
+                    `).join('')}
                 </div>
             </div>
         </div>
@@ -368,20 +361,15 @@ function renderCityDetails(cityName) {
             </div>
             <div class="p-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    ${city.culinary.map(food => `
                     <div class="flex gap-4 items-center">
-                        <img src="https://via.placeholder.com/300x200" alt="Bakso Malang" class="w-32 h-32 object-cover rounded-lg">
+                        <img src="${food.imageUrl}" alt="${food.name}" class="w-32 h-32 object-cover rounded-lg">
                         <div>
-                            <h3 class="font-bold text-lg mb-2">Bakso Malang</h3>
-                            <p class="text-gray-600">Bakso dengan berbagai variasi isi dan tekstur.</p>
+                            <h3 class="font-bold text-lg mb-2">${food.name}</h3>
+                            <p class="text-gray-600">${food.description}</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <img src="https://via.placeholder.com/300x200" alt="Apel Malang" class="w-32 h-32 object-cover rounded-lg">
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">Apel Malang</h3>
-                            <p class="text-gray-600">Buah apel segar khas Malang.</p>
-                        </div>
-                    </div>
+                    `).join('')}
                 </div>
             </div>
         </div>
@@ -400,18 +388,16 @@ function renderCityDetails(cityName) {
                 </h2>
             </div>
             <div class="p-6 space-y-4">
+                ${city.events.map(event => `
                 <div class="border-b pb-4 last:border-0">
-                    <h3 class="font-bold text-lg">Malang Night Paradise</h3>
-                    <p class="text-blue-600 font-medium">Every Weekend</p>
-                    <p class="text-gray-600">Festival cahaya dan hiburan malam hari.</p>
+                    <h3 class="font-bold text-lg">${event.name}</h3>
+                    <p class="text-blue-600 font-medium">${event.date}</p>
+                    <p class="text-gray-600">${event.description}</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg">Malang Tempo Doeloe</h3>
-                    <p class="text-blue-600 font-medium">August 2024</p>
-                    <p class="text-gray-600">Festival budaya yang menampilkan sejarah dan tradisi Malang.</p>
-                </div>
+                `).join('')}
             </div>
         </div>
+      </div>
     </div>
   `;
 
@@ -425,11 +411,15 @@ function renderCityDetails(cityName) {
   });
 }
 
-// Event listener for anchor clicks
-document.querySelectorAll("a[href='#/detail']").forEach((anchor) => {
-  anchor.addEventListener("click", (e) => {
-    e.preventDefault();
-    const cityName = e.target.textContent.trim();
-    renderCityDetails(cityName);
+// Tambahkan event listener untuk seluruh halaman
+document.addEventListener('DOMContentLoaded', () => {
+  // Event listener untuk link "Learn More" di halaman home
+  document.querySelectorAll('a[href="#/detail"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Ambil nama kota dari elemen sebelumnya (h3)
+      const cityName = anchor.closest('.destination-card').querySelector('h3').textContent.trim();
+      renderCityDetails(cityName);
+    });
   });
 });
