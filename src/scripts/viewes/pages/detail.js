@@ -330,7 +330,7 @@ function renderCityDetails(cityName) {
                         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    Tourist Attractions
+                    Destination
                 </h2>
             </div>
             <div class="p-6">
@@ -356,7 +356,7 @@ function renderCityDetails(cityName) {
                         <path d="M14.5 17.5 10 22l-4-4-4 4v-5l4-4-6-6V3l9 9"></path>
                         <path d="m22 9-4.5 4.5L18 18l-6-6"></path>
                     </svg>
-                    Local Cuisine
+                    Culinary
                 </h2>
             </div>
             <div class="p-6">
