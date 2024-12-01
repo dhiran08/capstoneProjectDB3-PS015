@@ -331,7 +331,7 @@ function renderHalamanEvent() {
         const namaKota = anchor.closest('.destination-card').querySelector('h3').textContent.trim();
         
         // Panggil fungsi renderCityDetails dari detail.js
-        renderHalamanEvent(namaKota);
+        renderCityDetails(namaKota);
       });
     });
   }
