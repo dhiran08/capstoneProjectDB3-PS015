@@ -7,71 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans text-gray-800">
-    <!-- Header -->
-    <header class="shadow-md">
-      <div class="bg-blue-600 text-white py-2">
-        <div class="container mx-auto flex justify-between items-center px-4">
-          <div class="logo">
-            <a href="#">
-              <img
-                src="https://placehold.co/200x50"
-                alt="Explore Nusantara"
-                class="max-h-12"
-              />
-            </a>
-          </div>
-          <div class="search flex gap-2">
-            <input
-              type="text"
-              placeholder="Search"
-              class="px-3 py-2 rounded-md border-none w-72"
-            />
-            <button class="bg-blue-800 text-white px-4 py-2 rounded-md">
-              Search
-            </button>
-          </div>
-          <div class="language-select">
-            <select
-              class="px-3 py-2 rounded-md bg-blue-800 text-white border-none"
-            >
-              <option value="en">English</option>
-              <option value="id">Bahasa Indonesia</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <nav class="py-2">
-        <div class="container mx-auto">
-          <ul class="flex justify-center space-x-6">
-            <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
-                >Destinations</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
-                >Culinarys</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
-                >Events</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
-                >About</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <navbar-element></navbar-element>
 
     <!-- Hero Section -->
     <main>
@@ -98,26 +34,26 @@
       <!-- City Highlight -->
       <section class="py-10">
         <div class="container mx-auto">
-          <h2 class="text-5xl font-bold text-center mb-8">
-            City Highlight
-          </h2>
+          <h2 class="text-5xl font-bold text-center mb-8">City Highlight</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Destination Card -->
             <div class="destination-card text-center">
               <img
-                src= "/src/public/images/Bali-screen.jpg"
+                src="/src/public/images/Bali-screen.jpg"
                 alt="Bali"
                 class="w-full h-48 object-cover rounded-md"
               />
               <h3 class="text-xl font-bold mt-4">Bali</h3>
               <p class="mt-2">
-                Explore the island's stunning beaches, lush rice terraces, and ancient temples.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                Explore the island's stunning beaches, lush rice terraces, and
+                ancient temples.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
-              
             </div>
 
             <div class="destination-card text-center">
@@ -128,11 +64,14 @@
               />
               <h3 class="text-xl font-bold mt-4">Jakarta</h3>
               <p class="mt-2">
-                A dynamic mix of modern vibes, rich history, and diverse flavors.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                A dynamic mix of modern vibes, rich history, and diverse
+                flavors.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
             </div>
 
@@ -144,11 +83,14 @@
               />
               <h3 class="text-xl font-bold mt-4">Lombok</h3>
               <p class="mt-2">
-                Relax on the beautiful beaches and hike the majestic Mount Rinjani.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                Relax on the beautiful beaches and hike the majestic Mount
+                Rinjani.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
             </div>
 
@@ -162,12 +104,14 @@
                 <a href="#/detail">Malang</a>
               </h3>
               <p class="mt-2">
-                Charming city with cool weather, scenic landscapes, and 
-                colorful culture.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                Charming city with cool weather, scenic landscapes, and colorful
+                culture.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
             </div>
 
@@ -181,12 +125,14 @@
                 <a href="#/detail">Bandung</a>
               </h3>
               <p class="mt-2">
-                A stylish city known for its fashion, food, and cool 
-                mountain air.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                A stylish city known for its fashion, food, and cool mountain
+                air.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
             </div>
 
@@ -200,12 +146,14 @@
                 <a href="#/detail">Yogyakarta</a>
               </h3>
               <p class="mt-2">
-                A city full of history, culture, and stunning ancient 
-                temples.<span><a
-                  href="#/detail"
-                  class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
-                  >Learn More</a
-                ></span>
+                A city full of history, culture, and stunning ancient
+                temples.<span
+                  ><a
+                    href="#/detail"
+                    class="inline-block bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-3"
+                    >Learn More</a
+                  ></span
+                >
               </p>
             </div>
           </div>
@@ -231,8 +179,8 @@
             <h3 class="text-lg font-bold mb-4">Quick Links</h3>
             <ul class="space-y-2">
               <li><a href="#" class="hover:underline">Home</a></li>
-              <li><a href="#" class="hover:underline">Destinations</a></li>
-              <li><a href="#" class="hover:underline">Localpreneurs</a></li>
+              <li><a href="#" class="hover:underline">Destination</a></li>
+              <li><a href="#" class="hover:underline">Culinary</a></li>
               <li><a href="#" class="hover:underline">Events</a></li>
               <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
@@ -260,7 +208,7 @@
         </div>
       </div>
     </footer>
-    <script src="/src/scripts/viewes/pages/detail.js"></script>
-    <script src="/src/scripts/viewes/pages/destination.js"></script>
+    <script src="/src/scripts/views/pages/detail.js"></script>
+    <script src="/src/scripts/views/pages/destination.js"></script>
   </body>
 </html>
