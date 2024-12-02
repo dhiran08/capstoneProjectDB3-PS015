@@ -41,17 +41,17 @@ class NavbarElement extends HTMLElement {
         <div class="container mx-auto">
           <ul class="flex justify-center space-x-6" id="nav-menu">
             <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600" id="nav-home"
                 >Home</a
               >
             </li>
             <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600" id="nav-destination"
                 >Destination</a
               >
             </li>
             <li>
-              <a href="#" class="text-gray-800 font-bold hover:text-blue-600"
+              <a href="#" class="text-gray-800 font-bold hover:text-blue-600" id="nav-culinary"
                 >Culinary</a
               >
             </li>
