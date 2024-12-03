@@ -61,4 +61,7 @@ function loadCulinaryPage() {
     </section>
   `;
   body.appendChild(culinaryContent);
+
+  const footer = document.createElement('footer-element');
+  body.appendChild(footer);
 }
