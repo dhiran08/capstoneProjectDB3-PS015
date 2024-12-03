@@ -27,13 +27,14 @@ class NavbarElement extends HTMLElement {
               Search
             </button>
           </div>
-          <div class="language-select">
-            <select
-              class="px-3 py-2 rounded-md bg-blue-800 text-white border-none"
-            >
-              <option value="en">English</option>
-              <option value="id">Bahasa Indonesia</option>
-            </select>
+          <div class="user-auth">
+            <a href="#" class="text-white-800 font-bold hover:text-black-600" id="register"
+                >Register</a
+              >
+            <span class="mx-2">|</span>
+            <a href="#" class="text-white-800 font-bold hover:text-black-600" id="login"
+                >Login</a
+              >
           </div>
         </div>
       </div>

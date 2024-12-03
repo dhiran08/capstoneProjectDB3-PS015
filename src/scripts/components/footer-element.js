@@ -44,7 +44,7 @@ class FooterElement extends HTMLElement {
           </div>
         </div>
         <div class="text-center mt-10 text-sm">
-          <p>&copy; 2024 Indonesia Travel. All rights reserved.</p>
+          <p>&copy; 2024 Explore Nusantara. All rights reserved.</p>
         </div>
       </div>
     </footer>

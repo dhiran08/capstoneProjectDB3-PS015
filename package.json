@@ -1,0 +1,17 @@
+{
+  "name": "explore-indonesia-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/scripts/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "regenerator-runtime": "^0.14.1",
+    "require": "^0.4.4"
+  },
+  "type": "module"
+}
